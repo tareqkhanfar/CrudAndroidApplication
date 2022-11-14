@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="#585757"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/label1"
+            android:textAlignment="center"
+            android:text="StudentSystem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:background="#080957"
+            android:textColor="@color/white"
+            />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/test" />
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="         Enter The Name      "
+            tools:visibility="visible"
+
+            style="@style/styleEditText" />
+        <EditText
+            android:id="@+id/id"
+            android:hint="         Enter The ID      "
+            tools:visibility="visible"
+            android:inputType="number"
+            style="@style/styleEditText" />
+
+        <EditText
+            android:id="@+id/age"
+            android:hint="         Enter The Age      "
+            tools:visibility="visible"
+            style="@style/styleEditText"
+            android:inputType="number"
+            />
+
+        <RadioGroup
+            android:id="@+id/radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <TextView
+                android:layout_width="122dp"
+                android:layout_height="30dp"
+                android:background="#FDFDFD"
+                android:backgroundTint="#000000"
+                android:text="do you love me   "
+                android:textColor="#FF0000" />
+            <RadioButton
+                android:id="@+id/Yes"
+                android:layout_width="121dp"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/No"
+                android:layout_width="136dp"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+        <Switch
+            android:id="@+id/switch_"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IsSuperMan?"
+            style="@style/styleEditText"
+
+            />
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/city"
+            style="@style/styleEditText"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:background="#0E6B71"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="AddOnClick"
+                android:text="Add" />
+
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="SearchOnClick"
+
+                android:text="Search" />
+
+            <Button
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FF0000"
+                android:onClick="DeleteOnClick"
+                android:text="Delete"
+                tools:visibility="visible" />
+        </LinearLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/allData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#0E7123"
+                android:textColor="@color/white"
+                android:textSize="15dp"
+                />
+        </ScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

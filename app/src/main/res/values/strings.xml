@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CrudApplication</string>
+
+    <string-array name="city" >
+        <item>Ramallah</item>
+        <item>Nablus</item>
+        <item>Jenin</item>
+        <item>Tulkarem</item>
+        <item>Hebron</item>
+        <item>Al-Quds</item>
+        <item>Gaza</item>
+        <item>Jerecho</item>
+        <item>Qalqilyah</item>
+        <item>Other</item>
+    </string-array>
+</resources>
